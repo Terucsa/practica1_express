@@ -1,0 +1,28 @@
+{
+  "name": "practica1_express",
+  "version": "1.0.0",
+  "description": "Primera practica",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terucsa/practica1_express.git"
+  },
+  "keywords": [
+    "ferreteria",
+    "productos",
+    "ventas"
+  ],
+  "author": "Belter Vásquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terucsa/practica1_express/issues"
+  },
+  "homepage": "https://github.com/Terucsa/practica1_express#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
