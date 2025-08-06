@@ -71,7 +71,7 @@ const postProductHandler = async (req, res) => {
         response = {
             message: "success",
             data: {
-                clientId: new_product.id,
+                productId: new_product.id,
             }
         }
         return res.status(201).json(response);

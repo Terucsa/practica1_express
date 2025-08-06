@@ -1,9 +1,13 @@
 import { Router } from 'express';
 import {
-    getEmployeeHandler
-} from    '../controllers/employee.controller'
+    getEmployeeHandler,
+    getEmployeeHandlerByParam,
+    postEmployeeHandler
+} from '../controllers/employee.controller.js'
 
 const router = Router();
 router.get('/', getEmployeeHandler);
+router.get('/:id', getEmployeeHandlerByParam);
+router.post('/', postEmployeeHandler);
 
 export default router;
