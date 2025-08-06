@@ -1,4 +1,4 @@
-import { products } from "../mocka-data/productos.data.js";
+import { products } from "../mocka-data/product.data.js";
 
 const getProductsHandler = async (req, res) => {
     try{
