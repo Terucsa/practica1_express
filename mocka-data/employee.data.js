@@ -1,0 +1,122 @@
+export let employees = [
+    {
+        id: 1,
+        nombre: "Carlos Gómez",
+        puesto: "Vendedor",
+        departamento: "Ventas",
+        salario: 4500,
+        correo: "carlos.gomez@ferreteria.com",
+        telefono: "50245678901",
+        direccion: "Zona 1, Ciudad de Guatemala",
+        fecha_contratacion: "2022-01-15",
+        activo: true
+    },
+    {
+        id: 2,
+        nombre: "María López",
+        puesto: "Cajera",
+        departamento: "Caja",
+        salario: 3900,
+        correo: "maria.lopez@ferreteria.com",
+        telefono: "50245678902",
+        direccion: "Zona 11, Mixco",
+        fecha_contratacion: "2021-06-10",
+        activo: true
+    },
+    {
+        id: 3,
+        nombre: "Luis Rodríguez",
+        puesto: "Bodeguero",
+        departamento: "Almacén",
+        salario: 3700,
+        correo: "luis.rodriguez@ferreteria.com",
+        telefono: "50245678903",
+        direccion: "Zona 18, Ciudad de Guatemala",
+        fecha_contratacion: "2020-09-01",
+        activo: false
+    },
+    {
+        id: 4,
+        nombre: "Ana Castillo",
+        puesto: "Encargada de Compras",
+        departamento: "Compras",
+        salario: 5200,
+        correo: "ana.castillo@ferreteria.com",
+        telefono: "50245678904",
+        direccion: "Zona 5, Villa Nueva",
+        fecha_contratacion: "2019-11-25",
+        activo: true
+    },
+    {
+        id: 5,
+        nombre: "José Martínez",
+        puesto: "Técnico de Reparaciones",
+        departamento: "Servicio Técnico",
+        salario: 4800,
+        correo: "jose.martinez@ferreteria.com",
+        telefono: "50245678905",
+        direccion: "Zona 3, Amatitlán",
+        fecha_contratacion: "2023-03-10",
+        activo: true
+    },
+    {
+        id: 6,
+        nombre: "Paola Méndez",
+        puesto: "Asistente Administrativa",
+        departamento: "Administración",
+        salario: 4300,
+        correo: "paola.mendez@ferreteria.com",
+        telefono: "50245678906",
+        direccion: "Zona 14, Ciudad de Guatemala",
+        fecha_contratacion: "2022-08-05",
+        activo: true
+    },
+    {
+        id: 7,
+        nombre: "Diego Rivera",
+        puesto: "Contador",
+        departamento: "Contabilidad",
+        salario: 6000,
+        correo: "diego.rivera@ferreteria.com",
+        telefono: "50245678907",
+        direccion: "Zona 16, Ciudad de Guatemala",
+        fecha_contratacion: "2021-12-20",
+        activo: false
+    },
+    {
+        id: 8,
+        nombre: "Andrea Ruiz",
+        puesto: "Supervisora",
+        departamento: "Operaciones",
+        salario: 5100,
+        correo: "andrea.ruiz@ferreteria.com",
+        telefono: "50245678908",
+        direccion: "Zona 7, Mixco",
+        fecha_contratacion: "2020-02-01",
+        activo: true
+    },
+    {
+        id: 9,
+        nombre: "Juan Carlos Pérez",
+        puesto: "Repartidor",
+        departamento: "Logística",
+        salario: 4000,
+        correo: "juan.perez@ferreteria.com",
+        telefono: "50245678909",
+        direccion: "Zona 12, Villa Nueva",
+        fecha_contratacion: "2023-06-12",
+        activo: true
+    },
+    {
+        id: 10,
+        nombre: "Sofía Morales",
+        puesto: "Recepcionista",
+        departamento: "Atención al Cliente",
+        salario: 3700,
+        correo: "sofia.morales@ferreteria.com",
+        telefono: "50245678910",
+        direccion: "Zona 10, Ciudad de Guatemala",
+        fecha_contratacion: "2018-04-17",
+        activo: true
+    }
+];
