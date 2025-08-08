@@ -83,9 +83,78 @@ const postProductHandler = async (req, res) => {
     }
 }
 
+const putProductHandler = async (req, res) => {
+    try{
+        const update_product = req.body;
+        const product = products.findIndex(s => s.id == update_product.id);
+
+        let response = {};
+        if ( product === -1 ) {
+            response = {
+                message: "Este producto no existe",
+            }
+            return res.status(404   ).json(response);
+        }
+
+        products[product] = {
+            ...product[product],
+            ...update_product,
+        };
+
+        response = {
+            message: "success",
+            data: {
+                productId: update_product.id,
+            }
+        }
+        return res.status(201).json(response);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({
+            message: "Error interno del servidor"
+        });
+    }
+}
+
+const deleteProductHandler = async (req, res) => {
+
+    try{
+        const id = parseInt(req.params.id);
+        const product = products.findIndex(s => s.id == id);
+
+        if (isNaN(id)) {
+            return res.status(400).json({ error: 'Ingresa un número' });
+        }
+
+        let response = {};
+        if ( product === -1 ) {
+            response = {
+                message: "Este proveedor no existe",
+            }
+            return res.status(404).json(response);
+        }
+
+        products.splice(id-1, 1);
+
+        response = {
+            message: "success",
+            data: {
+                productId: id,
+            }
+        }
+        return res.status(201).json(response);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({
+            message: "Error interno del servidor"
+        });
+    }
+}
 
 export {
     getProductsHandler,
     getProductsHandlerByParam,
-    postProductHandler
+    postProductHandler,
+    putProductHandler,
+    deleteProductHandler,
 }

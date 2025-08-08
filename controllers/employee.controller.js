@@ -83,8 +83,77 @@ const postEmployeeHandler = async (req, res) => {
     }
 }
 
+const putEmployeeHandler = async (req, res) => {
+    try{
+        const update_employee = req.body;
+        const employee = employees.findIndex(e => e.id == update_employee.id);
+
+        let response = {};
+        if ( employee === -1 ) {
+            response = {
+                message: "Este empleado no existe",
+            }
+            return res.status(404).json(response);
+        }
+
+        employees[employee] = {
+            ...employee[employee],
+            ...update_employee,
+        };
+
+        response = {
+            message: "success",
+            data: {
+                employeeId: update_employee.id,
+            }
+        }
+        return res.status(201).json(response);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({
+            message: "Error interno del servidor"
+        });
+    }
+}
+
+const deleteEmployeeHandler = async (req, res) => {
+    try{
+        const id = parseInt(req.params.id);
+        const employee = employees.findIndex(e => e.id == id);
+
+        if (isNaN(id)) {
+            return res.status(400).json({ error: 'Ingresa un número' });
+        }
+
+        let response = {};
+        if ( employee === -1 ) {
+            response = {
+                message: "Este empleado no existe",
+            }
+            return res.status(404).json(response);
+        }
+
+        employees.splice(id-1, 1);
+
+        response = {
+            message: "success",
+            data: {
+                employeeId: id,
+            }
+        }
+        return res.status(201).json(response);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({
+            message: "Error interno del servidor"
+        });
+    }
+}
+
 export  {
     getEmployeeHandler,
     getEmployeeHandlerByParam,
-    postEmployeeHandler
+    postEmployeeHandler,
+    putEmployeeHandler,
+    deleteEmployeeHandler,
 }

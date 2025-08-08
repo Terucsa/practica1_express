@@ -5,12 +5,12 @@ import supplier_router from './supplier.route.js';
 const router = Router();
 
 //Rutas de productos
-router.use('/product', product_router);
+router.use('/products', product_router);
 
 //Ruta de trabajadores
-router.use('/employee', employee_router);
+router.use('/employees', employee_router);
 
 //Ruta de proveedores
-router.use('/supplier', supplier_router)
+router.use('/suppliers', supplier_router)
 
 export default router;
