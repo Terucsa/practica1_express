@@ -1,0 +1,61 @@
+//JSON para agregar productos
+{
+  "id": 11,
+  "nombre": "Clavos de 2 pulgadas",
+  "descripcion": "Clavos de acero galvanizado de 2 pulgadas",
+  "para_que_sirve": "Fijar materiales como madera o concreto",
+  "url_imagen": "https://example.com/img/clavos.jpg",
+  "precio": 5.75,
+  "marca": "Truper",
+  "stock": 200
+}
+
+//JSON para actualizar productos
+{
+  "id": 1,
+  "nombre": "Martillo Carpintero",
+  "precio": 80,
+  "stock": 4
+}
+
+//JSON para agregar empleados
+{
+  "id": 11,
+  "nombre": "Luis Herrera",
+  "correo": "luis.herrera@example.com",
+  "telefono": "50255667788",
+  "direccion": "Zona 8, Ciudad de Guatemala",
+  "nit": "3456789-0",
+  "empresa": "Construcciones Herrera",
+  "activo": true
+}
+//JSON para actualizar empleados
+{
+  "id": 1,
+  "nombre": "Luis Herrera",
+  "correo": "luis.herrera@example.com",
+  "telefono": "5024789821",
+  "direccion": "Zona 8, Ciudad de Guatemala",
+  "nit": "3456789-0",
+  "empresa": "Construcciones Herrera 2",
+  "activo": true
+}
+//JSON para proveedores agregar
+
+{
+    "id": 12,
+    "nombre": "Ana Torres",
+    "empresa": "Suministros y Herramientas",
+    "telefono": "555-1122",
+    "correo": "ana.torres@suministros.com",
+    "direccion": "Parque Industrial 12, Mérida, YUC"
+}
+
+//JSON para actualizar proveedores
+
+{
+  "id": 1,
+  "telefono": "555-8888",
+  "direccion": "Nueva dirección 456, Monterrey, NL"
+}
+
